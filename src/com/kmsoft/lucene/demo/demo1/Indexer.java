@@ -12,5 +12,5 @@ import org.apache.lucene.index.IndexWriter;
  */
 public class Indexer {
     private IndexWriter writer;
-    
+
 }
