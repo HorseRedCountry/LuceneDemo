@@ -1,5 +1,6 @@
 package com.kmsoft.lucene.demo.demo1;
 
+import org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.StringField;
@@ -24,7 +25,7 @@ public class Indexer {
 
     public Indexer(String indexDirectoryPath) throws IOException {
         Directory indexDirectory = FSDirectory.open((new File(indexDirectoryPath)).toPath());
-        writer = new IndexWriter(indexDirectory, new IndexWriterConfig());
+        writer = new IndexWriter(indexDirectory, new IndexWriterConfig(new SmartChineseAnalyzer()));
     }
 
 
@@ -35,7 +36,7 @@ public class Indexer {
     private Document getDocument(File file) throws IOException {
         Document document = new Document();
         document.add(new TextField(LuceneConstants.CONTENTS, new FileReader(file)));
-        document.add(new StringField(LuceneConstants.FILE_NAME, file.getName(), Field.Store.YES));
+        document.add(new StringField(LuceneConstants.FILE_NAME, file.getName().split("\\.")[0], Field.Store.YES));
         document.add(new StringField(LuceneConstants.FILE_PATH, file.getCanonicalPath(), Field.Store.YES));
         return document;
     }

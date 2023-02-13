@@ -1,11 +1,10 @@
 package com.kmsoft.lucene.demo.demo1;
 
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
-import org.apache.lucene.queryparser.flexible.standard.StandardQueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
@@ -32,7 +31,7 @@ public class Searcher {
     public Searcher(String indexDirectoryPath) throws IOException {
         Directory indexDirectory = FSDirectory.open((new File(indexDirectoryPath)).toPath());
         indexSearcher = new IndexSearcher(DirectoryReader.open(indexDirectory));
-        queryParser = new QueryParser(LuceneConstants.CONTENTS, new StandardAnalyzer());
+        queryParser = new QueryParser(LuceneConstants.CONTENTS, new SmartChineseAnalyzer());
     }
 
     public TopDocs search(String queryStr) throws IOException, ParseException {

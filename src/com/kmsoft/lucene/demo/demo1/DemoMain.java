@@ -26,8 +26,8 @@ public class DemoMain {
         DemoMain test;
         try {
             test = new DemoMain();
-//            test.createIndex();
-            test.search("zhangsan");
+            test.createIndex();
+            test.search("麻子");
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
