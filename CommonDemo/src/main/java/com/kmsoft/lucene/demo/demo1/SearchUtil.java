@@ -35,7 +35,7 @@ public class SearchUtil {
         long startTime = System.currentTimeMillis();
         TopDocs topDocs = searcher.search(queryStr);
         long endTime = System.currentTimeMillis();
-        System.out.println(topDocs.totalHits + "个文件被找到，共耗时:" + (endTime - startTime));
+        System.out.println(topDocs.totalHits + "个文件被找到，共耗时:" + (endTime - startTime) + "ms");
         for (ScoreDoc scoreDoc : topDocs.scoreDocs) {
             Document document = searcher.getDocument(scoreDoc);
             System.out.println("File: " + document.get(LuceneConstants.FILE_PATH));

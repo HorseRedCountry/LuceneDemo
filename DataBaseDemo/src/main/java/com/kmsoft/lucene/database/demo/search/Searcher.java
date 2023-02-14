@@ -30,6 +30,7 @@ public class Searcher {
      * @param indexPath 索引所在目录
      */
     public static void search(String queryStr, String indexPath) throws ParseException, IOException {
+        long startTime = System.currentTimeMillis();
         //1.创建查询对象，用于查询
         //查询解析对象
         QueryParser queryParser = new QueryParser("title", new IKAnalyzer());
@@ -40,8 +41,13 @@ public class Searcher {
         //索引读取对象
         DirectoryReader directoryReader = DirectoryReader.open(directory);
         IndexSearcher indexSearcher = new IndexSearcher(directoryReader);
+        long midTime = System.currentTimeMillis();
+        System.out.println("准备搜索耗时：" + (midTime - startTime) + "ms");
         //3.搜索，得到返回集
         TopDocs searchResult = indexSearcher.search(query, 10);
+        long endTime = System.currentTimeMillis();
+        System.out.println("搜索耗时:" + (endTime - midTime) + "ms");
+        System.out.println(searchResult.totalHits + "个文件被找到，共耗时:" + (endTime - startTime) + "ms");
         System.out.println("查询到的数量为：" + searchResult.totalHits);
         //4.打印结果
         for (ScoreDoc scoreDoc : searchResult.scoreDocs) {

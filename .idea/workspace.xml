@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a49da92-c44f-47db-8ec6-2f0e38f4965c" name="Changes" comment="Add gitIgnore file.">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/SearchUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/SearchUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBaseDemo/src/main/java/com/kmsoft/lucene/database/demo/search/Searcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBaseDemo/src/main/java/com/kmsoft/lucene/database/demo/search/Searcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DemoMain (2)">
+  <component name="RunManager" selected="Application.DemoMain">
     <configuration name="DemoMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kmsoft.lucene.ik.demo.DemoMain" />
       <module name="IKAnalyzerDemo" />
@@ -156,10 +157,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DemoMain" />
         <item itemvalue="Application.DemoMain (2)" />
         <item itemvalue="Application.FilmDao" />
         <item itemvalue="Application.DemoMain (1)" />
-        <item itemvalue="Application.DemoMain" />
         <item itemvalue="Application.StringDemo" />
       </list>
     </recent_temporary>
@@ -176,7 +177,7 @@
       <workItem from="1676094644349" duration="3909000" />
       <workItem from="1676251030458" duration="25761000" />
       <workItem from="1676336194346" duration="12825000" />
-      <workItem from="1676352361540" duration="2261000" />
+      <workItem from="1676352361540" duration="5783000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitIgnore file.">
       <created>1676259071831</created>
