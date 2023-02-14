@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a49da92-c44f-47db-8ec6-2f0e38f4965c" name="Changes" comment="Add gitIgnore file.">
-      <change beforePath="$PROJECT_DIR$/libs/lucene-analyzers-common-8.11.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/libs/lucene-analyzers-common-8.11.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/lucene-analyzers-smartcn-8.11.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/libs/lucene-analyzers-smartcn-8.11.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/lucene-core-8.11.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/libs/lucene-core-8.11.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/lucene-demo-8.11.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/libs/lucene-demo-8.11.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/lucene-queryparser-8.11.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/libs/lucene-queryparser-8.11.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LuceneDemo/com/kmsoft/lucene/demo/HelloLucene.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LuceneDemo/com/kmsoft/lucene/demo/demo1/DemoMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LuceneDemo/com/kmsoft/lucene/demo/demo1/Indexer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LuceneDemo/com/kmsoft/lucene/demo/demo1/LuceneConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LuceneDemo/com/kmsoft/lucene/demo/demo1/Searcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LuceneDemo/com/kmsoft/lucene/demo/demo1/TextFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kmsoft/lucene/demo/HelloLucene.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/HelloLucene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kmsoft/lucene/demo/demo1/DemoMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/DemoMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kmsoft/lucene/demo/demo1/Indexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/Indexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kmsoft/lucene/demo/demo1/LuceneConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/LuceneConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kmsoft/lucene/demo/demo1/Searcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/Searcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kmsoft/lucene/demo/demo1/TextFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/TextFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/DemoMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/DemoMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/Indexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/Indexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/Searcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommonDemo/src/main/java/com/kmsoft/lucene/demo/demo1/Searcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +31,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -157,7 +146,8 @@
       <updated>1676088433278</updated>
       <workItem from="1676088434702" duration="52000" />
       <workItem from="1676094644349" duration="3909000" />
-      <workItem from="1676251030458" duration="23821000" />
+      <workItem from="1676251030458" duration="25761000" />
+      <workItem from="1676336194346" duration="3952000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitIgnore file.">
       <created>1676259071831</created>
@@ -189,6 +179,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add gitIgnore file." />
