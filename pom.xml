@@ -11,6 +11,7 @@
     <modules>
         <module>CommonDemo</module>
         <module>IKAnalyzerDemo</module>
+        <module>DataBaseDemo</module>
     </modules>
 
     <properties>

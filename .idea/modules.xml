@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CommonDemo/CommonDemo.iml" filepath="$PROJECT_DIR$/CommonDemo/CommonDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataBaseDemo/DataBaseDemo.iml" filepath="$PROJECT_DIR$/DataBaseDemo/DataBaseDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/IKAnalyzerDemo/IKAnalyzerDemo.iml" filepath="$PROJECT_DIR$/IKAnalyzerDemo/IKAnalyzerDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/LuceneDemo.iml" filepath="$PROJECT_DIR$/LuceneDemo.iml" />
     </modules>
