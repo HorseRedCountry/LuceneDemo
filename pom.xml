@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>CommonDemo</module>
+        <module>IKAnalyzerDemo</module>
     </modules>
 
     <properties>
