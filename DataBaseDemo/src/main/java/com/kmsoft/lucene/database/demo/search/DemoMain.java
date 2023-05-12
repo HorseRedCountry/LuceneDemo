@@ -16,7 +16,7 @@ public class DemoMain {
     public static void main(String[] args) {
         String indexDir = "D:/Lucene/databasedemo";
         try {
-//            Indexer.createIndex(indexDir);
+            Indexer.createIndex(indexDir);
             Searcher.search("day",indexDir);
         } catch (IOException | ParseException e) {
             e.printStackTrace();

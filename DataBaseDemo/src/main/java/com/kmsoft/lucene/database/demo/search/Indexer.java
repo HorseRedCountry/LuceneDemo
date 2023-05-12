@@ -2,17 +2,16 @@ package com.kmsoft.lucene.database.demo.search;
 
 import com.kmsoft.lucene.database.demo.dao.FilmDao;
 import com.kmsoft.lucene.database.demo.entity.FilmEntity;
-import org.apache.lucene.document.Document;
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.StringField;
-import org.apache.lucene.document.TextField;
+import org.apache.lucene.document.*;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.util.BytesRef;
 import org.wltea.analyzer.lucene.IKAnalyzer;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,12 +38,15 @@ public class Indexer {
         }
         //2.创建文档对象，将所需的域添加至文本对象内
         List<Document> documentList = new ArrayList<>();
+        byte[] byteArr = new byte[]{1, 'd', 123, '%'};
         for (FilmEntity film : allFilms) {
             Document document = new Document();
             document.add(new StringField("filmId", film.getFilmId() + "", Field.Store.YES));
             document.add(new TextField("title", film.getTitle(), Field.Store.YES));
             document.add(new StringField("description", film.getDescription(), Field.Store.YES));
             document.add(new StringField("releaseYear", film.getReleaseYear(), Field.Store.YES));
+            document.add(new StoredField("byteArr", byteArr));
+            document.add(new BinaryDocValuesField("myName",new BytesRef("mahongguo".getBytes(StandardCharsets.UTF_8))));
             documentList.add(document);
         }
         //3.创建索引写入对象，并指定分词器，写入索引

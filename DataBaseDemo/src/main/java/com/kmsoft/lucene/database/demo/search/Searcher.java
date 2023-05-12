@@ -9,6 +9,7 @@ import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.util.BytesRef;
 import org.wltea.analyzer.lucene.IKAnalyzer;
 
 import java.io.File;
@@ -59,6 +60,16 @@ public class Searcher {
             System.out.println("电影名称：" + doc.get("title"));
             System.out.println("电影简介：" + doc.get("description"));
             System.out.println("电影上映年份：" + doc.get("releaseYear"));
+            System.out.println("字符数组");
+            byte[] byteArr = doc.getBinaryValue("byteArr").bytes;
+            for (byte b : byteArr) {
+                System.out.print(b + "--");
+            }
+            byte[] myNames = doc.getBinaryValue("myName").bytes;
+            System.out.println("测试："+doc.get("myName"));
+            for (byte myName : myNames) {
+                System.out.println(myName);
+            }
             System.out.println("==============================================================");
         }
         directoryReader.close();
