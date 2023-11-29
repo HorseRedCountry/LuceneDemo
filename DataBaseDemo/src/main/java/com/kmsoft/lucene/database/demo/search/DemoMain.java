@@ -1,6 +1,7 @@
 package com.kmsoft.lucene.database.demo.search;
 
 import org.apache.lucene.queryparser.classic.ParseException;
+import org.apache.lucene.search.highlight.InvalidTokenOffsetsException;
 
 import java.io.IOException;
 
@@ -17,9 +18,11 @@ public class DemoMain {
         String indexDir = "D:/Lucene/databasedemo";
         try {
             Indexer.createIndex(indexDir);
-            Searcher.search("day",indexDir);
+            Searcher.search("who",indexDir);
         } catch (IOException | ParseException e) {
             e.printStackTrace();
+        } catch (InvalidTokenOffsetsException e) {
+            throw new RuntimeException(e);
         }
     }
 }

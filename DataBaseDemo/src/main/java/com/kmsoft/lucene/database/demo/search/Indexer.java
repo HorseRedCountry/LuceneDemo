@@ -41,9 +41,9 @@ public class Indexer {
         byte[] byteArr = new byte[]{1, 'd', 123, '%'};
         for (FilmEntity film : allFilms) {
             Document document = new Document();
-            document.add(new StringField("filmId", film.getFilmId() + "", Field.Store.YES));
+            document.add(new StringField("filmId", String.valueOf(film.getFilmId()), Field.Store.YES));
             document.add(new TextField("title", film.getTitle(), Field.Store.YES));
-            document.add(new StringField("description", film.getDescription(), Field.Store.YES));
+            document.add(new TextField("description", film.getDescription(), Field.Store.YES));
             document.add(new StringField("releaseYear", film.getReleaseYear(), Field.Store.YES));
             document.add(new StoredField("byteArr", byteArr));
             document.add(new BinaryDocValuesField("myName",new BytesRef("mahongguo".getBytes(StandardCharsets.UTF_8))));
